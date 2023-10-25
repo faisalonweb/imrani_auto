@@ -1,0 +1,7 @@
+{
+  "name": "imran_autos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
