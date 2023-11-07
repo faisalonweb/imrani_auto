@@ -1,3 +1,48 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-menu side="start" contentId="main-content">
+  <ion-content>
+    <div class="content-center">
+      <div class="portfolio-img">
+        <ion-avatar class="ion-margin-bottom ava-img-cls">
+          <img src="assets/avatar.svg" alt="Profile Picture" />
+        </ion-avatar>
+        <p>Rana Asad Fiaz</p>
+      </div>
+      <ion-list class="custom-list-style">
+        <ion-item
+          routerLink="/home"
+          lines="none"
+          detail="false"
+          class="ion-margin-bottom custom-item-style"
+          ><ion-icon name="business" slot="start"> </ion-icon>
+          <ion-label> Tours </ion-label>
+        </ion-item>
+        <ion-item
+          routerLink="/home"
+          lines="none"
+          detail="false"
+          class="ion-margin-bottom custom-item-style"
+          ><ion-icon name="business" slot="start"> </ion-icon>
+          <ion-label> Products </ion-label>
+        </ion-item>
+        <ion-item
+          routerLink="/home"
+          lines="none"
+          detail="false"
+          class="ion-margin-bottom custom-item-style"
+          ><ion-icon name="checkbox-outline" slot="start"> </ion-icon>
+          <ion-label> Users </ion-label>
+        </ion-item>
+        <ion-item
+          routerLink="/home"
+          lines="none"
+          detail="false"
+          class="ion-margin-bottom custom-item-style"
+          ><ion-icon name="exit" slot="start"> </ion-icon>
+          <ion-label> Vechiles </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>
